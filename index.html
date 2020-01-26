@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Académico</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+  <div class="contenedor">
+    <form class="formulario" id="formulario">
+      <div class="contenedor-inputs">
+        <div class="instrumento">
+          <input type="radio" name="instrumento" id="bateria" value="bateria">
+          <label class="label-radio bateria" for="bateria">Batería</label>
+          <input type="radio" name="instrumento" id="guitarra" value="guitarra">
+          <label class="label-radio guitarra" for="guitarra">Guitarra</label>
+          <input type="radio" name="instrumento" id="teclado" value="teclado">
+          <label class="label-radio teclado" for="teclado">Teclado</label>
+          <input type="radio" name="instrumento" id="canto" value="canto">
+          <label class="label-radio canto" for="canto">Canto</label>
+
+        </div>
+        <div class="edad">
+         <input type="radio" name="edad" id="seis" value="seis">
+         <label class="label-radio seis" for="seis">6 a 10</label>
+         <input type="radio" name="edad" id="11a14" value="11a14">
+         <label class="label-radio" for="11a14">11 a 14</label>
+         <input type="radio" name="edad" id="adulto" value="adulto">
+         <label class="label-radio adulto" for="adulto">+14</label>
+       </div>
+
+       <div class="horas">
+         <input type="radio" name="horas" id="veinte" value="veinte">
+         <label class="label-radio veinte" for="veinte">20h</label>
+         <input type="radio" name="horas" id="cuarenta" value="cuarenta">
+         <label class="label-radio cuarenta" for="cuarenta">40h</label>
+       </div>
+
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="email" name="correo" placeholder="Correo">
+        <div class="terminos">
+          <input type="checkbox" name="terminos" id="terminos">
+          <label for="terminos">Acepto terminos y condiciones</label>
+        </div>
+        <ul class="error" id="error">
+        </ul>
+      </div>
+      <input type="submit" class="btn value="Cotizar">
+    </form>
+  </div>
+  <script src="Formulario.js"></script>
+</body>
+</html>
